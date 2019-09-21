@@ -5,9 +5,9 @@ Multi-label classification - Image Recognition
 ## Introduction
 We have processed images to represent as a vector of 300 attributes, The first 294 are decimal values in the range 0 to 1 inclusive. The next six are binary values describing whether the image had a beach, a sunset, plants, a field, mountains, and building respectively. A value of 1 describes that the scene was present and 0 means it was not. For example
 
-\textbullet The vector <0.01,...,0,1,...,0.25,...,1,0,0,0,1,0> describes an image with a beach and mountains before processing
-\textbullet The vector <0.01,...,0,1,...,0.25,...,0,1,1,0,0,1> describes an image with a sunset and buildings before processing
-\textbullet The vector <0.01,...,0,1,...,0.25,...,0,0,0,1,0,0> describes an image with only a field before processing
+* The vector <0.01,...,0,1,...,0.25,...,1,0,0,0,1,0> describes an image with a beach and mountains before processing
+* The vector <0.01,...,0,1,...,0.25,...,0,1,1,0,0,1> describes an image with a sunset and buildings before processing
+* The vector <0.01,...,0,1,...,0.25,...,0,0,0,1,0,0> describes an image with only a field before processing
 
 ## Note
 The data provided is not based on the real images, so you should not try generating images from the dataset. You should build the training model using the given dataset only
@@ -23,8 +23,8 @@ Write the code to build a model to predict how many types of scenes were present
 
 ## Evaluation
 The prediction accuracy of the model is calculated using accuracy score:
-\textbullet Expected = ["0,0,0,0,1,1", "1,0,0,1,0,0"]
-\textbullet Predicted = ["0,0,0,0,1,1", "1,0,1,0,0,1"]
-\textbullet  Correct Prediction = ["Yes", "No"]
+* Expected = ["0,0,0,0,1,1", "1,0,0,1,0,0"]
+* Predicted = ["0,0,0,0,1,1", "1,0,1,0,0,1"]
+* Correct Prediction = ["Yes", "No"]
 
 The correct number of predictions is 1, so the accuracy score is 1/2=0.5
